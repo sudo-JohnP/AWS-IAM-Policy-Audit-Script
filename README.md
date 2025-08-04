@@ -54,7 +54,8 @@ Below are the steps I took to build and validate the IAM audit script, with scre
 ### 1. Created a Risky Test Policy in AWS Console
 I intentionally included high-risk actions like `s3:*`, `iam:PassRole`, and a wildcard resource `"*"`.
 
-![Risky Policy JSON](screenshots/risky_policy.png)
+<img width="677" height="360" alt="image" src="https://github.com/user-attachments/assets/9b043a87-33bf-4936-8b17-91d380338164" />
+
 
 ---
 
