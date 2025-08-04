@@ -44,3 +44,28 @@ Policy: TestAuditPolicy (arn:aws:iam::123456789012:policy/TestAuditPolicy)
  - High-Risk Action: iam:PassRole
  - High-Risk Action: s3:*
  - High-Risk Action: ec2:*
+
+---
+
+## 🚀 Project Steps
+
+Below are the steps I took to build and validate the IAM audit script, with screenshots included.
+
+### 1. Created a Risky Test Policy in AWS Console
+I intentionally included high-risk actions like `s3:*`, `iam:PassRole`, and a wildcard resource `"*"`.
+
+![Risky Policy JSON](screenshots/risky_policy.png)
+
+---
+
+### 2. Ran the Python Audit Script
+After configuring AWS CLI and running `iam_audit.py`, the script flagged the risky policy as expected.
+
+![Terminal Output](screenshots/terminal_output.png)
+
+---
+
+### 3. Script Running in VS Code
+The script was developed and tested in VS Code using Python and Boto3.
+
+![Code View](screenshots/code_view.png)
