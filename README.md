@@ -62,11 +62,12 @@ I intentionally included high-risk actions like `s3:*`, `iam:PassRole`, and a wi
 ### 2. Ran the Python Audit Script
 After configuring AWS CLI and running `iam_audit.py`, the script flagged the risky policy as expected.
 
-![Terminal Output](screenshots/terminal_output.png)
+<img width="1088" height="530" alt="image" src="https://github.com/user-attachments/assets/6411025a-641a-4789-925a-c4896468b709" />
+
 
 ---
 
 ### 3. Script Running in VS Code
 The script was developed and tested in VS Code using Python and Boto3.
 
-![Code View](screenshots/code_view.png)
+See iam_audit.py file (in this repo) for the script!
