@@ -70,4 +70,4 @@ After configuring AWS CLI and running `iam_audit.py`, the script flagged the ris
 ### 3. Script Running in VS Code
 The script was developed and tested in VS Code using Python and Boto3.
 
-See https://github.com/sudo-JohnP/AWS-IAM-Policy-Audit-Script/blob/main/iam_audit.py for the script!
+See [iam_audit.py](https://github.com/sudo-JohnP/AWS-IAM-Policy-Audit-Script/blob/main/iam_audit.py) for the script!
