@@ -7,7 +7,8 @@ This Python script scans your AWS account for customer-managed IAM policies and 
 - ✅ High-risk actions (`iam:PassRole`, `iam:PutUserPolicy`)
 
 ### Why These Permissions Are Risky
-- 
+- iam:PassRole -- Allows user to assign roles to resources in AWS (including higher priveleged roles!)
+- Why's that risky? -- Risks privelege escalation by an attacker as they could assign higher priveleged roles to a service to gain broader access.
 
 
 Built using Python and Boto3, this tool helps enforce the principle of least privilege by flagging over-permissive IAM policies.
