@@ -12,20 +12,20 @@ The script scans your AWS account for customer-managed IAM policies and identifi
 ## Why These Permissions Are Risky:
 
 ### 'iam:PassRole' 
-Allows user to assign roles to resources in AWS (including higher priveleged roles!)
-**Why's that risky?** -- Risks privelege escalation by an attacker as they could assign higher priveleged roles to a service to gain broader access.
+- Allows user to assign roles to resources in AWS (including higher priveleged roles!)
+- **Why's that risky?** -- Risks privelege escalation by an attacker as they could assign higher priveleged roles to a service to gain broader access.
 
 ### 'iam:CreatePolicy', 'iam:PutUserPolicy', 'iam:AttachRolePolicy'
-Allows users to create/attach policies to users/roles
-**Why's that risky?** -- Possible security bypass through the attachment of admin-level priveleges.
+- Allows users to create/attach policies to users/roles
+- **Why's that risky?** -- Possible security bypass through the attachment of admin-level priveleges.
 
 ### Wildcard Actions ('s3:*', 'ec2:*', '"Action": "*"')
-Grants access to all actions on a service/across all services
-**Why's that risky?** -- Goes against the principle of least privelege. Also increases the possible impacts of leaked/stolen credentials.
+- Grants access to all actions on a service/across all services
+- **Why's that risky?** -- Goes against the principle of least privelege. Also increases the possible impacts of leaked/stolen credentials.
 
 ### Wildcard Resources ('"Resource": "*"')
-Grants permissions for all resources in an account
-**Why's that risky?** -- Even the smallest scoped actions can become dangerous when they're applied to **ALL** resources. 
+- Grants permissions for all resources in an account
+- **Why's that risky?** -- Even the smallest scoped actions can become dangerous when they're applied to **ALL** resources. 
 
 ---
 
