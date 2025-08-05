@@ -3,9 +3,9 @@
 Built using Python and Boto3, this tool helps enforce the principle of least privilege by flagging over-permissive IAM policies.
 The script scans your AWS account for customer-managed IAM policies and identifies risky permissions such as:
 
-- ✅ Wildcard actions (`"Action": "*"` or `"s3:*"`)
-- ✅ Wildcard resources (`"Resource": "*"` or global access)
-- ✅ High-risk actions (`iam:PassRole`, `iam:PutUserPolicy`)
+- Wildcard actions (`"Action": "*"` or `"s3:*"`)
+- Wildcard resources (`"Resource": "*"` or global access)
+- High-risk actions (`iam:PassRole`, `iam:PutUserPolicy`)
 
 ---
 
@@ -29,16 +29,16 @@ The script scans your AWS account for customer-managed IAM policies and identifi
 
 ---
 
-## ⚙️ Features
+## Features
 
-- 🔍 Scans all customer-managed IAM policies in your AWS account
-- 🚨 Detects wildcard permissions and high-risk actions
-- 📋 Outputs easily readable findings to the terminal
-- 🧪 Tested with intentionally risky IAM policies for validation
+- Scans all customer-managed IAM policies in your AWS account
+- Detects wildcard permissions and high-risk actions
+- Outputs easily readable findings to the terminal
+- Tested with intentionally risky IAM policies for validation
 
 ---
 
-## 🖥️ How to Use
+## How to Use
 
 ### 1. Configure AWS CLI credentials
 
@@ -66,7 +66,7 @@ Policy: TestAuditPolicy (arn:aws:iam::123456789012:policy/TestAuditPolicy)
 
 ---
 
-## 🚀 Project Steps
+## Project Steps
 
 Below are the steps I took to build and validate the IAM audit script, with screenshots included.
 
