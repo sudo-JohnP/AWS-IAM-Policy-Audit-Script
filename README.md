@@ -6,6 +6,10 @@ This Python script scans your AWS account for customer-managed IAM policies and 
 - ✅ Wildcard resources (`"Resource": "*"` or global access)
 - ✅ High-risk actions (`iam:PassRole`, `iam:PutUserPolicy`)
 
+### Why These Permissions Are Risky
+- 
+
+
 Built using Python and Boto3, this tool helps enforce the principle of least privilege by flagging over-permissive IAM policies.
 
 ---
