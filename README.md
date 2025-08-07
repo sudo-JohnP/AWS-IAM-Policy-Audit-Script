@@ -1,4 +1,4 @@
-# 🌐 AWS IAM Policy Audit Script
+# AWS IAM Policy Audit Script
 
 Built using Python and Boto3, this tool helps enforce the principle of least privilege by flagging over-permissive IAM policies.
 The script scans your AWS account for customer-managed IAM policies and identifies risky permissions such as:
